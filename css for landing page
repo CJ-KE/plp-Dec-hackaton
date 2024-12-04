@@ -1,0 +1,162 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f8ff;
+    padding: 10px;
+}
+
+/* Header Styling */
+header {
+    background-color: #0F2A1D;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin-left: 10px;
+}
+
+/* Navigation Bar Styling */
+nav ul {
+    list-style: none;
+    background-color: #375534;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content and Sidebar */
+main {
+    display: flex;
+    margin: 20px 0;
+    width: 100%;
+}
+
+/* Content Area */
+.content {
+    flex: 3;
+    padding: 20px;
+    background-color: white;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background-color: #e8e8e8;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*aside 2 styling*/
+.ass{
+    flex:2;
+    background-color: #375534;
+    padding: 20px;
+    margin: auto;
+    border-radius: 5px;
+    
+
+}
+/* Footer Styling */
+footer {
+    background-color: #AEC3B0;
+    color: #E3EED4
+    padding: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #E3EED4;
+    text-decoration: none;
+}
+
+/* Responsive Design - Media Queries */
+
+/* For tablets (widths between 600px and 900px) */
+@media (max-width: 900px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .content {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* For smartphones (widths less than 600px) */
+@media (max-width: 600px) {
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    /* Hamburger Menu */
+    nav ul.hamburger {
+        display: block;
+        cursor: pointer;
+        background-color: #300de0;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-top: 20px;
+    }
+}
+/*snippet for z fold*/
+@media (min-width: 768px) and (orientation: landscape) {
+    /* Styles for unfolded landscape mode */
+  }
+  
+  @media (max-width: 767px) and (orientation: portrait) {
+    /* Styles for folded portrait mode */
+  }
